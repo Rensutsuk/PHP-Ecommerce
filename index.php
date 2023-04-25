@@ -1,13 +1,12 @@
-<?<php>
+<!DOCTYPE html>
 <html>
 <body>
 
-<form action="welcome.php" method="post">
-Name: <input type="text" name="name"><br>
-E-mail: <input type="text" name="email"><br>
-<input type="submit">
-</form>
+<h1>My first PHP page</h1>
+
+<?php
+echo "Hello World!";
+?>
 
 </body>
 </html>
-</php>
