@@ -1,11 +1,15 @@
 <?php
-	$host = "localhost";
-	$user = "root";
-	$pass = "";
-	$db = "attendancemsystem";
-	
-	$conn = new mysqli($host, $user, $pass, $db);
-	if($conn->connect_error){
-		echo "Seems like you have not configured the database. Failed To Connect to database:" . $conn->connect_error;
-	}
+// PHP Data Objects(PDO) Sample Code:
+try {
+    $conn = new PDO("sqlsrv:server = tcp:project-omegasql.database.windows.net,1433; Database = project-omegaDB", "Rensutsuki", "{your_password_here}");
+    $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+} catch (PDOException $e) {
+    print("Error connecting to SQL Server.");
+    die(print_r($e));
+}
+
+// SQL Server Extension Sample Code:
+$connectionInfo = array("UID" => "Rensutsuki", "pwd" => "{your_password_here}", "Database" => "project-omegaDB", "LoginTimeout" => 30, "Encrypt" => 1, "TrustServerCertificate" => 0);
+$serverName = "tcp:project-omegasql.database.windows.net,1433";
+$conn = sqlsrv_connect($serverName, $connectionInfo);
 ?>
