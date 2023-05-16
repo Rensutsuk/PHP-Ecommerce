@@ -217,7 +217,7 @@ CREATE TABLE `tblstudents` (
 -- Dumping data for table `tblstudents`
 -- Wilmer Concepcion
 
-INSERT INTO `tblstudents` (`Id`, `firstName`, `lastName`, `otherName`, `admissionNumber`, `password`, `classId`, `classArmId`, `dateCreated`) VALUES
+INSERT INTO tblstudents (Id, firstName, lastName, otherName, admissionNumber, password, classId, classArmId, dateCreated) VALUES
 (1, 'Thomas', 'Omari', 'none', 'AMS005', '12345', '1', '2', '2022-10-31'),
 (3, 'Samuel', 'Ondieki', 'none', 'AMS007', '12345', '1', '2', '2022-10-31'),
 (4, 'Milagros', 'Oloo', 'none', 'AMS011', '12345', '1', '2', '2022-10-31'),
@@ -241,16 +241,16 @@ INSERT INTO `tblstudents` (`Id`, `firstName`, `lastName`, `otherName`, `admissio
 -- Table structure for table `tblterm`
 -- 
 
-CREATE TABLE `tblterm` (
-  `Id` int(10) NOT NULL,
-  `termName` varchar(20) NOT NULL
+CREATE TABLE tblterm (
+  Id int(10) NOT NULL,
+  termName varchar(20) NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `tblterm`
 --
 
-INSERT INTO `tblterm` (`Id`, `termName`) VALUES
+INSERT INTO tblterm (Id, termName) VALUES
 (1, 'First'),
 (2, 'Second'),
 (3, 'Third');
@@ -262,50 +262,50 @@ INSERT INTO `tblterm` (`Id`, `termName`) VALUES
 --
 -- Indexes for table `tbladmin`
 --
-ALTER TABLE `tbladmin`
-  ADD PRIMARY KEY (`Id`);
+ALTER TABLE tbladmin
+  ADD PRIMARY KEY (Id);
 
 --
 -- Indexes for table `tblattendance`
 --
-ALTER TABLE `tblattendance`
-  ADD PRIMARY KEY (`Id`);
+ALTER TABLE tblattendance
+  ADD PRIMARY KEY (Id);
 
 --
 -- Indexes for table `tblclass`
 --
-ALTER TABLE `tblclass`
-  ADD PRIMARY KEY (`Id`);
+ALTER TABLE tblclass
+  ADD PRIMARY KEY (Id);
 
 --
 -- Indexes for table `tblclassarms`
 --
-ALTER TABLE `tblclassarms`
-  ADD PRIMARY KEY (`Id`);
+ALTER TABLE tblclassarms
+  ADD PRIMARY KEY (Id);
 
 --
 -- Indexes for table `tblclassteacher`
 --
-ALTER TABLE `tblclassteacher`
-  ADD PRIMARY KEY (`Id`);
+ALTER TABLE tblclassteacher
+  ADD PRIMARY KEY (Id);
 
 --
 -- Indexes for table `tblsessionterm`
 --
-ALTER TABLE `tblsessionterm`
-  ADD PRIMARY KEY (`Id`);
+ALTER TABLE tblsessionterm
+  ADD PRIMARY KEY (Id);
 
 --
 -- Indexes for table `tblstudents`
 --
-ALTER TABLE `tblstudents`
-  ADD PRIMARY KEY (`Id`);
+ALTER TABLE tblstudents
+  ADD PRIMARY KEY (Id);
 
 --
 -- Indexes for table `tblterm`
 --
-ALTER TABLE `tblterm`
-  ADD PRIMARY KEY (`Id`);
+ALTER TABLE tblterm
+  ADD PRIMARY KEY (Id);
 
 --
 -- AUTO_INCREMENT for dumped tables
@@ -314,50 +314,50 @@ ALTER TABLE `tblterm`
 --
 -- AUTO_INCREMENT for table `tbladmin`
 --
-ALTER TABLE `tbladmin`
-  MODIFY `Id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+ALTER TABLE tbladmin
+  MODIFY Id int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT for table `tblattendance`
 --
-ALTER TABLE `tblattendance`
-  MODIFY `Id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=204;
+ALTER TABLE tblattendance
+  MODIFY Id int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=204;
 
 --
 -- AUTO_INCREMENT for table `tblclass`
 --
-ALTER TABLE `tblclass`
-  MODIFY `Id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+ALTER TABLE tblclass
+  MODIFY Id int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT for table `tblclassarms`
 --
-ALTER TABLE `tblclassarms`
-  MODIFY `Id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+ALTER TABLE tblclassarms
+  MODIFY Id int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT for table `tblclassteacher`
 --
-ALTER TABLE `tblclassteacher`
-  MODIFY `Id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+ALTER TABLE tblclassteacher
+  MODIFY Id int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT for table `tblsessionterm`
 --
-ALTER TABLE `tblsessionterm`
-  MODIFY `Id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+ALTER TABLE tblsessionterm
+  MODIFY Id int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT for table `tblstudents`
 --
-ALTER TABLE `tblstudents`
-  MODIFY `Id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
+ALTER TABLE tblstudents
+  MODIFY Id int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
 
 --
 -- AUTO_INCREMENT for table `tblterm`
 --
-ALTER TABLE `tblterm`
-  MODIFY `Id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+ALTER TABLE tblterm
+  MODIFY Id int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
