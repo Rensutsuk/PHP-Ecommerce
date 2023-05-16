@@ -215,7 +215,7 @@ CREATE TABLE `tblstudents` (
 
 --
 -- Dumping data for table `tblstudents`
--- Wilmer Conception
+-- Wilmer Concepcion
 
 INSERT INTO `tblstudents` (`Id`, `firstName`, `lastName`, `otherName`, `admissionNumber`, `password`, `classId`, `classArmId`, `dateCreated`) VALUES
 (1, 'Thomas', 'Omari', 'none', 'AMS005', '12345', '1', '2', '2022-10-31'),
