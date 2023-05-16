@@ -117,7 +117,7 @@ CREATE TABLE `tblclass` (
 -- Dumping data for table `tblclass`
 -- Mariton de Paz
 
-INSERT INTO `tblclass` (`Id`, `className`) VALUES
+INSERT INTO tblclass (Id, className) VALUES
 (1, 'Seven'),
 (3, 'Eight'),
 (4, 'Nine');
@@ -128,18 +128,18 @@ INSERT INTO `tblclass` (`Id`, `className`) VALUES
 -- Table structure for table `tblclassarms`
 --
 
-CREATE TABLE `tblclassarms` (
-  `Id` int(10) NOT NULL,
-  `classId` varchar(10) NOT NULL,
-  `classArmName` varchar(255) NOT NULL,
-  `isAssigned` varchar(10) NOT NULL
-) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+CREATE TABLE tblclassarms (
+  Id int(10) NOT NULL,
+  classId varchar(10) NOT NULL,
+  classArmName varchar(255) NOT NULL,
+  isAssigned varchar(10) NOT NULL
+);
 
 --
 -- Dumping data for table `tblclassarms`
 --
 
-INSERT INTO `tblclassarms` (`Id`, `classId`, `classArmName`, `isAssigned`) VALUES
+INSERT INTO tblclassarms (Id, classId, classArmName, isAssigned) VALUES
 (2, '1', 'S1', '1'),
 (4, '1', 'S2', '1'),
 (5, '3', 'E1', '1'),
@@ -151,23 +151,23 @@ INSERT INTO `tblclassarms` (`Id`, `classId`, `classArmName`, `isAssigned`) VALUE
 -- Table structure for table `tblclassteacher`
 --
 
-CREATE TABLE `tblclassteacher` (
-  `Id` int(10) NOT NULL,
-  `firstName` varchar(255) NOT NULL,
-  `lastName` varchar(255) NOT NULL,
-  `emailAddress` varchar(255) NOT NULL,
-  `password` varchar(255) NOT NULL,
-  `phoneNo` varchar(50) NOT NULL,
-  `classId` varchar(10) NOT NULL,
-  `classArmId` varchar(10) NOT NULL,
-  `dateCreated` varchar(50) NOT NULL
-) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+CREATE TABLE tblclassteacher (
+  Id int(10) NOT NULL,
+  firstName varchar(255) NOT NULL,
+  lastName varchar(255) NOT NULL,
+  emailAddress varchar(255) NOT NULL,
+  password varchar(255) NOT NULL,
+  phoneNo varchar(50) NOT NULL,
+  classId varchar(10) NOT NULL,
+  classArmId varchar(10) NOT NULL,
+  dateCreated varchar(50) NOT NULL
+);
 
 --
 -- Dumping data for table `tblclassteacher`
 --
 
-INSERT INTO `tblclassteacher` (`Id`, `firstName`, `lastName`, `emailAddress`, `password`, `phoneNo`, `classId`, `classArmId`, `dateCreated`) VALUES
+INSERT INTO tblclassteacher (Id, firstName, lastName, emailAddress, password, phoneNo, classId, classArmId, dateCreated) VALUES
 (1, 'Will', 'Kibagendi', 'teacher2@mail.com', '32250170a0dca92d53ec9624f336ca24', '09089898999', '1', '2', '2022-10-31'),
 (4, 'Demola', 'Ade', 'teacher3@gmail.com', '32250170a0dca92d53ec9624f336ca24', '09672002882', '1', '4', '2022-11-01'),
 (5, 'Ryan', 'Mbeche', 'teacher4@mail.com', '32250170a0dca92d53ec9624f336ca24', '7014560000', '3', '5', '2022-10-07'),
@@ -179,19 +179,19 @@ INSERT INTO `tblclassteacher` (`Id`, `firstName`, `lastName`, `emailAddress`, `p
 -- Table structure for table `tblsessionterm`
 --
 
-CREATE TABLE `tblsessionterm` (
-  `Id` int(10) NOT NULL,
-  `sessionName` varchar(50) NOT NULL,
-  `termId` varchar(50) NOT NULL,
-  `isActive` varchar(10) NOT NULL,
-  `dateCreated` varchar(50) NOT NULL
-) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+CREATE TABLE tblsessionterm (
+  Id int(10) NOT NULL,
+  sessionName varchar(50) NOT NULL,
+  termId varchar(50) NOT NULL,
+  isActive varchar(10) NOT NULL,
+  dateCreated varchar(50) NOT NULL
+);
 
 --
 -- Dumping data for table `tblsessionterm`
 --
 
-INSERT INTO `tblsessionterm` (`Id`, `sessionName`, `termId`, `isActive`, `dateCreated`) VALUES
+INSERT INTO tblsessionterm (Id, sessionName, termId, isActive, dateCreated) VALUES
 (1, '2021/2022', '1', '1', '2022-10-31'),
 (3, '2021/2022', '2', '0', '2022-10-31');
 
@@ -201,17 +201,17 @@ INSERT INTO `tblsessionterm` (`Id`, `sessionName`, `termId`, `isActive`, `dateCr
 -- Table structure for table `tblstudents`
 -- 
 
-CREATE TABLE `tblstudents` (
-  `Id` int(10) NOT NULL,
-  `firstName` varchar(255) NOT NULL,
-  `lastName` varchar(255) NOT NULL,
-  `otherName` varchar(255) NOT NULL,
-  `admissionNumber` varchar(255) NOT NULL,
-  `password` varchar(50) NOT NULL,
-  `classId` varchar(10) NOT NULL,
-  `classArmId` varchar(10) NOT NULL,
-  `dateCreated` varchar(50) NOT NULL
-) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+CREATE TABLE tblstudents (
+  Id int(10) NOT NULL,
+  firstName varchar(255) NOT NULL,
+  lastName varchar(255) NOT NULL,
+  otherName varchar(255) NOT NULL,
+  admissionNumber varchar(255) NOT NULL,
+  password varchar(50) NOT NULL,
+  classId varchar(10) NOT NULL,
+  classArmId varchar(10) NOT NULL,
+  dateCreated varchar(50) NOT NULL
+);
 
 --
 -- Dumping data for table `tblstudents`
