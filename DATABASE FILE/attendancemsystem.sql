@@ -28,19 +28,19 @@ SET time_zone = "+00:00";
 -- Table structure for table `tbladmin`
 --
 
-CREATE TABLE `tbladmin` (
+CREATE TABLE tbladmin (
   Id int(10) NOT NULL,
-  `firstName` varchar(50) NOT NULL,
-  `lastName` varchar(50) NOT NULL,
-  `emailAddress` varchar(50) NOT NULL,
-  `password` varchar(50) NOT NULL
-) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+  firstName varchar(50) NOT NULL,
+  lastName varchar(50) NOT NULL,
+  emailAddress varchar(50) NOT NULL,
+  password varchar(50) NOT NULL
+);
 
 --
 -- Dumping data for table `tbladmin`
 --
 
-INSERT INTO `tbladmin` (`Id`, `firstName`, `lastName`, `emailAddress`, `password`) VALUES
+INSERT INTO tbladmin (Id, firstName, lastName, emailAddress, password) VALUES
 (1, 'Admin', '', 'admin@mail.com', 'D00F5D5217896FB7FD601412CB890830');
 
 -- --------------------------------------------------------
@@ -49,21 +49,21 @@ INSERT INTO `tbladmin` (`Id`, `firstName`, `lastName`, `emailAddress`, `password
 -- Table structure for table `tblattendance`
 --
 
-CREATE TABLE `tblattendance` (
-  `Id` int(10) NOT NULL,
-  `admissionNo` varchar(255) NOT NULL,
-  `classId` varchar(10) NOT NULL,
-  `classArmId` varchar(10) NOT NULL,
-  `sessionTermId` varchar(10) NOT NULL,
-  `status` varchar(10) NOT NULL,
-  `dateTimeTaken` varchar(20) NOT NULL
-) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+CREATE TABLE tblattendance (
+  Id int(10) NOT NULL,
+  admissionNo varchar(255) NOT NULL,
+  classId varchar(10) NOT NULL,
+  classArmId varchar(10) NOT NULL,
+  sessionTermId varchar(10) NOT NULL,
+  status varchar(10) NOT NULL,
+  dateTimeTaken varchar(20) NOT NULL
+);
 
 --
 -- Dumping data for table `tblattendance`
 --
 
-INSERT INTO `tblattendance` (`Id`, `admissionNo`, `classId`, `classArmId`, `sessionTermId`, `status`, `dateTimeTaken`) VALUES
+INSERT INTO tblattendance (Id, admissionNo, classId, classArmId, sessionTermId, status, dateTimeTaken) VALUES
 (162, 'ASDFLKJ', '1', '2', '1', '1', '2020-11-01'),
 (163, 'HSKSDD', '1', '2', '1', '1', '2020-11-01'),
 (164, 'JSLDKJ', '1', '2', '1', '1', '2020-11-01'),
@@ -108,10 +108,10 @@ INSERT INTO `tblattendance` (`Id`, `admissionNo`, `classId`, `classArmId`, `sess
 -- Table structure for table `tblclass`
 -- 
 
-CREATE TABLE `tblclass` (
-  `Id` int(10) NOT NULL,
-  `className` varchar(255) NOT NULL
-) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+CREATE TABLE tblclass (
+  Id int(10) NOT NULL,
+  className varchar(255) NOT NULL
+);
 
 --
 -- Dumping data for table `tblclass`
