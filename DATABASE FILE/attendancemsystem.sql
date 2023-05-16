@@ -305,7 +305,7 @@ ALTER TABLE tblstudents
 -- Indexes for table `tblterm`
 --
 ALTER TABLE tblterm
-  ADD PRIMARY KEY (Id);
+  ADD PRIMARY KEY ('Id)';
 
 --
 -- AUTO_INCREMENT for dumped tables
