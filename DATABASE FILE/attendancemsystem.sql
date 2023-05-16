@@ -6,6 +6,7 @@
 -- Generation Time: Jun 06, 2022 at 09:57 PM
 -- Server version: 10.4.17-MariaDB
 -- PHP Version: 8.0.1
+-- Rishi Mae
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -28,7 +29,7 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE `tbladmin` (
-  `Id` int(10) NOT NULL,
+  Id int(10) NOT NULL,
   `firstName` varchar(50) NOT NULL,
   `lastName` varchar(50) NOT NULL,
   `emailAddress` varchar(50) NOT NULL,
@@ -105,7 +106,7 @@ INSERT INTO `tblattendance` (`Id`, `admissionNo`, `classId`, `classArmId`, `sess
 
 --
 -- Table structure for table `tblclass`
---
+-- 
 
 CREATE TABLE `tblclass` (
   `Id` int(10) NOT NULL,
@@ -114,7 +115,7 @@ CREATE TABLE `tblclass` (
 
 --
 -- Dumping data for table `tblclass`
---
+-- Mariton de Paz
 
 INSERT INTO `tblclass` (`Id`, `className`) VALUES
 (1, 'Seven'),
@@ -198,7 +199,7 @@ INSERT INTO `tblsessionterm` (`Id`, `sessionName`, `termId`, `isActive`, `dateCr
 
 --
 -- Table structure for table `tblstudents`
---
+-- 
 
 CREATE TABLE `tblstudents` (
   `Id` int(10) NOT NULL,
@@ -214,7 +215,7 @@ CREATE TABLE `tblstudents` (
 
 --
 -- Dumping data for table `tblstudents`
---
+-- Wilmer Conception
 
 INSERT INTO `tblstudents` (`Id`, `firstName`, `lastName`, `otherName`, `admissionNumber`, `password`, `classId`, `classArmId`, `dateCreated`) VALUES
 (1, 'Thomas', 'Omari', 'none', 'AMS005', '12345', '1', '2', '2022-10-31'),
@@ -238,7 +239,7 @@ INSERT INTO `tblstudents` (`Id`, `firstName`, `lastName`, `otherName`, `admissio
 
 --
 -- Table structure for table `tblterm`
---
+-- 
 
 CREATE TABLE `tblterm` (
   `Id` int(10) NOT NULL,
