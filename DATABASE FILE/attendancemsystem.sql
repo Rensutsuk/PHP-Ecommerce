@@ -244,7 +244,7 @@ INSERT INTO tblstudents (Id, firstName, lastName, otherName, admissionNumber, pa
 CREATE TABLE tblterm (
   Id int(10) NOT NULL,
   termName varchar(20) NOT NULL
-) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+);
 
 --
 -- Dumping data for table `tblterm`
@@ -305,7 +305,7 @@ ALTER TABLE tblstudents
 -- Indexes for table `tblterm`
 --
 ALTER TABLE tblterm
-  ADD PRIMARY KEY ('Id)';
+  ADD PRIMARY KEY (Id);
 
 --
 -- AUTO_INCREMENT for dumped tables
