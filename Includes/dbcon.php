@@ -1,5 +1,13 @@
 <?php
-$con = mysqli_init();
-mysqli_ssl_set($con, NULL, NULL, "Includes\DigiCertGlobalRootCA.crt.pem", NULL, NULL);
-mysqli_real_connect($conn, "attendace-db.mysql.database.azure.com", "JohnRenzo", "^9e71k2eGk1M%T4m", "attendace-db", 3306, MYSQLI_CLIENT_SSL);
+$serverName = "attendace-management-server.mysql.database.azure.com";
+$databaseName = "attendance-management-database";
+$username = "htnovwfcwn";
+$password = "3N1D31W2H43AQ7WY$";
+
+$conn = new mysqli($serverName, $username, $password, $databaseName);
+
+// Check connection
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
 ?>
